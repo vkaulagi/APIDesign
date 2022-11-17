@@ -18,6 +18,8 @@ public class ApiDesign1ApplicationTests {
         APIController.main(null);
     }
 
+    // Happy test cases
+
     @Test
     public void getCurrentDateHappy() {
         given().
@@ -58,6 +60,8 @@ public class ApiDesign1ApplicationTests {
                 then().
                 statusCode(200);
     }
+
+    // Unhappy test cases
 
     @Test
     public void addEventHappy() throws JSONException {
