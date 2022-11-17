@@ -61,8 +61,6 @@ public class ApiDesign1ApplicationTests {
                 statusCode(200);
     }
 
-    // Unhappy test cases
-
     @Test
     public void addEventHappy() throws JSONException {
         JSONObject postObj = new JSONObject().put("date", 2022);
@@ -81,6 +79,8 @@ public class ApiDesign1ApplicationTests {
                 then().
                 statusCode(200);
     }
+
+    // Unhappy test cases
 
     @Test
     public void getCurrentDateUnhappy() {
